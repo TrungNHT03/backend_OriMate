@@ -1,4 +1,4 @@
-﻿using OrigamiPlatform.Application.Features.Tutorials.DTOs;
+﻿using OrigamiPlatform.Application.DTOs.Tutorials;
 
 namespace OrigamiPlatform.Application.Commands.Tutorials;
 

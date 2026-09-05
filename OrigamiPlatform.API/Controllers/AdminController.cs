@@ -2,7 +2,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OrigamiPlatform.Application.Commands.AdminConfiguration;
-using OrigamiPlatform.Application.Features.AdminConfiguration.DTOs;
+using OrigamiPlatform.Application.DTOs.AdminConfiguration;
 using OrigamiPlatform.Application.Queries.AdminConfiguration;
 using OrigamiPlatform.Domain.Exceptions;
 

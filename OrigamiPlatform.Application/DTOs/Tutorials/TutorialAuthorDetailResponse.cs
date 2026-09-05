@@ -1,6 +1,6 @@
 ﻿using OrigamiPlatform.Application.DTOs.Tutorials;
 
-namespace OrigamiPlatform.Application.Features.Tutorials.DTOs;
+namespace OrigamiPlatform.Application.DTOs.Tutorials;
 
 /// <summary>Full tutorial detail for the author's own authoring/editing flow — includes steps regardless of Status.</summary>
 public record TutorialAuthorDetailResponse(

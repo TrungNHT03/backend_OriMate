@@ -1,4 +1,4 @@
-namespace OrigamiPlatform.Application.Features.Tutorials.DTOs;
+namespace OrigamiPlatform.Application.DTOs.Tutorials;
 
 public record TutorialResponse(
     Guid Id,

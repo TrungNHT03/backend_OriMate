@@ -1,5 +1,5 @@
-using OrigamiPlatform.Application.Features.AdminConfiguration.DTOs;
-using OrigamiPlatform.Application.Features.AdminConfiguration.Validators;
+using OrigamiPlatform.Application.DTOs.AdminConfiguration;
+using OrigamiPlatform.Application.Validators.AdminConfiguration;
 using OrigamiPlatform.Application.Interfaces;
 using OrigamiPlatform.Domain.Entities;
 using OrigamiPlatform.Domain.Exceptions;

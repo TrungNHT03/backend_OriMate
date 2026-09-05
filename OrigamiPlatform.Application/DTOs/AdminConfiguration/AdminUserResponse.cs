@@ -1,4 +1,4 @@
-namespace OrigamiPlatform.Application.Features.AdminConfiguration.DTOs;
+namespace OrigamiPlatform.Application.DTOs.AdminConfiguration;
 
 public record AdminUserResponse(
     Guid Id,

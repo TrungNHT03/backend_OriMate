@@ -1,5 +1,5 @@
 using OrigamiPlatform.Application.DTOs.Common;
-using OrigamiPlatform.Application.Features.Tutorials.DTOs;
+using OrigamiPlatform.Application.DTOs.Tutorials;
 using OrigamiPlatform.Application.Interfaces;
 
 namespace OrigamiPlatform.Application.Queries.Tutorials;

@@ -281,6 +281,7 @@ public class TutorialRepository : ITutorialRepository
         TutorialStatus? status,
         int? categoryId,
         bool? isOfficial,
+        TutorialDifficulty? difficulty,
         int page,
         int pageSize,
         CancellationToken ct = default)
@@ -305,6 +306,9 @@ public class TutorialRepository : ITutorialRepository
 
         if (isOfficial.HasValue)
             query = query.Where(t => t.IsOfficial == isOfficial.Value);
+
+        if (difficulty.HasValue)
+            query = query.Where(t => t.Difficulty == difficulty.Value);
 
         var totalCount = await query.CountAsync(ct);
 

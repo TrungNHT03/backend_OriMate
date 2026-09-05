@@ -1,5 +1,5 @@
 using OrigamiPlatform.Application.DTOs.Common;
-using OrigamiPlatform.Application.Features.Tutorials.DTOs;
+using OrigamiPlatform.Application.DTOs.Tutorials;
 using OrigamiPlatform.Application.Interfaces;
 using OrigamiPlatform.Domain.Enums;
 using OrigamiPlatform.Domain.Exceptions;
@@ -28,8 +28,17 @@ public class GetAdminTutorialsHandler
             status = parsed;
         }
 
+        // Lenient like the public search endpoint: an unparseable difficulty yields an empty result set instead of a 400.
+        TutorialDifficulty? difficulty = null;
+        if (!string.IsNullOrWhiteSpace(query.Difficulty))
+        {
+            if (!Enum.TryParse<TutorialDifficulty>(query.Difficulty, ignoreCase: true, out var parsedDifficulty))
+                return new PagedResult<AdminTutorialListItemResponse>(new List<AdminTutorialListItemResponse>(), 0, page, pageSize, 0);
+            difficulty = parsedDifficulty;
+        }
+
         var result = await _tutorialRepo.GetAllForAdminAsync(
-            query.Search, status, query.CategoryId, query.IsOfficial, page, pageSize, ct);
+            query.Search, status, query.CategoryId, query.IsOfficial, difficulty, page, pageSize, ct);
 
         var items = result.Items.Select(t => new AdminTutorialListItemResponse(
             t.Id,

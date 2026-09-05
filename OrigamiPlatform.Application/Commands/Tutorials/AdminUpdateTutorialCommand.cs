@@ -1,4 +1,4 @@
-using OrigamiPlatform.Application.Features.Tutorials.DTOs;
+using OrigamiPlatform.Application.DTOs.Tutorials;
 using OrigamiPlatform.Domain.Enums;
 
 namespace OrigamiPlatform.Application.Commands.Tutorials;

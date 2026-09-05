@@ -1,4 +1,4 @@
-using OrigamiPlatform.Application.Features.Tutorials.DTOs;
+using OrigamiPlatform.Application.DTOs.Tutorials;
 using OrigamiPlatform.Application.Common;
 using OrigamiPlatform.Application.Interfaces;
 using OrigamiPlatform.Domain.Entities;

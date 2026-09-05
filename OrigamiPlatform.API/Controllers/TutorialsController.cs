@@ -6,7 +6,6 @@ using OrigamiPlatform.Application.Commands.AdminConfiguration;
 using OrigamiPlatform.Application.Commands.Tutorials;
 using OrigamiPlatform.Application.DTOs;
 using OrigamiPlatform.Application.DTOs.Tutorials;
-using OrigamiPlatform.Application.Features.Tutorials.DTOs;
 using OrigamiPlatform.Application.Queries.AdminConfiguration;
 using OrigamiPlatform.Application.Queries.Tutorials;
 using OrigamiPlatform.Domain.Enums;
@@ -335,12 +334,13 @@ public class TutorialsController : ControllerBase
         [FromQuery] string? status,
         [FromQuery] int? categoryId,
         [FromQuery] bool? isOfficial,
+        [FromQuery] string? difficulty,
         [FromQuery] int page = 1,
         [FromQuery] int pageSize = 20,
         CancellationToken ct = default)
     {
         var result = await _getAdminTutorials.HandleAsync(
-            new GetAdminTutorialsQuery(search, status, categoryId, isOfficial, page, pageSize), ct);
+            new GetAdminTutorialsQuery(search, status, categoryId, isOfficial, difficulty, page, pageSize), ct);
         return Ok(result);
     }
 

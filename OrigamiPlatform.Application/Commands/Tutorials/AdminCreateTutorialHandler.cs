@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 using OrigamiPlatform.Application.Common;
-using OrigamiPlatform.Application.Features.Tutorials.DTOs;
+using OrigamiPlatform.Application.DTOs.Tutorials;
 using OrigamiPlatform.Application.Interfaces;
 using OrigamiPlatform.Domain.Constants;
 using OrigamiPlatform.Domain.Entities;

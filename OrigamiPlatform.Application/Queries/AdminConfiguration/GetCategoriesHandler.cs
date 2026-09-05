@@ -1,4 +1,4 @@
-using OrigamiPlatform.Application.Features.AdminConfiguration.DTOs;
+using OrigamiPlatform.Application.DTOs.AdminConfiguration;
 using OrigamiPlatform.Application.Interfaces;
 
 namespace OrigamiPlatform.Application.Queries.AdminConfiguration;

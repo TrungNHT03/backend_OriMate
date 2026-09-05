@@ -56,6 +56,7 @@ public interface ITutorialRepository
         TutorialStatus? status,
         int? categoryId,
         bool? isOfficial,
+        TutorialDifficulty? difficulty,
         int page,
         int pageSize,
         CancellationToken ct = default);

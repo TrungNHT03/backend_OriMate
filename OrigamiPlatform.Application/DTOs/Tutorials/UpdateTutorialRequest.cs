@@ -1,13 +1,13 @@
-namespace OrigamiPlatform.Application.Features.Tutorials.DTOs;
+namespace OrigamiPlatform.Application.DTOs.Tutorials;
 
-public record CreateTutorialRequest(
+public record UpdateTutorialRequest(
     string Title,
     string Description,
     int CategoryId,
     string Difficulty,
     string Type,
     string? CoverImageUrl,
-    IList<CreateTutorialStepRequest>? Steps,
+    List<CreateTutorialStepRequest>? Steps,
     string? MetaTitle = null,
     string? MetaDescription = null,
     string? Tags = null

@@ -1,6 +1,6 @@
 using OrigamiPlatform.Application.DTOs.Tutorials;
 
-namespace OrigamiPlatform.Application.Features.Tutorials.DTOs;
+namespace OrigamiPlatform.Application.DTOs.Tutorials;
 
 /// <summary>Full tutorial detail for the admin edit form — any author, any status.</summary>
 public record AdminTutorialDetailResponse(

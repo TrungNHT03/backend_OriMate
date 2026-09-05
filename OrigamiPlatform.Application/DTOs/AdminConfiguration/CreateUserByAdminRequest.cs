@@ -1,3 +1,3 @@
-namespace OrigamiPlatform.Application.Features.AdminConfiguration.DTOs;
+namespace OrigamiPlatform.Application.DTOs.AdminConfiguration;
 
 public record CreateUserByAdminRequest(string Email, string Password, string DisplayName, string Role);

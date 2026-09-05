@@ -1,5 +1,5 @@
 using OrigamiPlatform.Application.DTOs.Common;
-using OrigamiPlatform.Application.Features.AdminConfiguration.DTOs;
+using OrigamiPlatform.Application.DTOs.AdminConfiguration;
 using OrigamiPlatform.Application.Interfaces;
 using OrigamiPlatform.Domain.Enums;
 

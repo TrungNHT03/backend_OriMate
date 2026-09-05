@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using OrigamiPlatform.Application.DTOs.LearningPaths;
 using OrigamiPlatform.Application.DTOs.Tutorials;
-using OrigamiPlatform.Application.Features.Tutorials.DTOs;
 using OrigamiPlatform.Domain.Enums;
 using System.Net;
 using System.Net.Http.Json;

@@ -1,4 +1,4 @@
-namespace OrigamiPlatform.Application.Features.Tutorials.DTOs;
+namespace OrigamiPlatform.Application.DTOs.Tutorials;
 
 /// <summary>One row in the admin tutorial management list — every "main" tutorial (not review
 /// working copies) regardless of author or status, so Admin/Manager can find and re-edit anything.</summary>

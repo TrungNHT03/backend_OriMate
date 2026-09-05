@@ -1,4 +1,4 @@
-namespace OrigamiPlatform.Application.Features.Tutorials.DTOs;
+namespace OrigamiPlatform.Application.DTOs.Tutorials;
 
 /// <summary>One row in the manager review queue. IsEdit distinguishes a working copy
 /// (approve-edit/reject-edit apply) from a new tutorial submission (publish/reject apply).</summary>

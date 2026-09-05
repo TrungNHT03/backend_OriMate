@@ -1,4 +1,4 @@
-using OrigamiPlatform.Application.Features.AdminConfiguration.Validators;
+using OrigamiPlatform.Application.Validators.AdminConfiguration;
 using OrigamiPlatform.Application.Interfaces;
 using OrigamiPlatform.Domain.Entities;
 using OrigamiPlatform.Domain.Enums;

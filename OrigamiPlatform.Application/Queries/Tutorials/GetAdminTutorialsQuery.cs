@@ -6,6 +6,7 @@ public record GetAdminTutorialsQuery(
     string? Status,
     int? CategoryId,
     bool? IsOfficial,
+    string? Difficulty,
     int Page,
     int PageSize
 );

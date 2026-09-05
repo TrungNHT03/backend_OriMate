@@ -1,7 +1,7 @@
 using OrigamiPlatform.Domain.Enums;
 using OrigamiPlatform.Domain.Exceptions;
 
-namespace OrigamiPlatform.Application.Features.AdminConfiguration.Validators;
+namespace OrigamiPlatform.Application.Validators.AdminConfiguration;
 
 public static class AssignRoleRequestValidator
 {
